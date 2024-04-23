@@ -4,3 +4,4 @@ build
 .dotnet
 .vscode-server
 .gnupg
+.local

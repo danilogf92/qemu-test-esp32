@@ -1,19 +1,19 @@
-# Hello World DOCKER Example
+# Esp32 Qemu Example
 
-| Testing Target | ESP32 |
+| Target | ESP32 |
 | ----------------- | ----- |
 
 ## Step 1
 
 ```text
-# build
+# Build
 idf.py build
 ```
 
 ## Step 2
 
 ```text
-# create a merged bin file
+# Create a merged bin file
 python /opt/esp/idf/components/esptool_py/esptool/esptool.py \
  --chip esp32 merge_bin \
  --output result.bin \
@@ -29,7 +29,7 @@ python /opt/esp/idf/components/esptool_py/esptool/esptool.py \
 ## Step 3
 
 ```text
-#emulate the build
+# Emulate the build
 qemu-system-xtensa -nographic \
     -machine esp32 \
     -drive file=result.bin,if=mtd,format=raw 
@@ -38,7 +38,7 @@ qemu-system-xtensa -nographic \
 ## Step 4
 
 ```text
-#debug
+# Debug
 qemu-system-xtensa -s -S -nographic \
     -machine esp32 \
     -drive file=result.bin,if=mtd,format=raw

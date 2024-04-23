@@ -4,4 +4,6 @@
 	email = danilogrnd@gmail.com
 	name = danilogf91
 [credential]
-	helper = "!f() { /home/esp/.vscode-server/bin/e170252f762678dec6ca2cc69aba1570769a5d39/node /tmp/vscode-remote-containers-6bfbca4e-c845-4a8e-b689-c072a990636b.js git-credential-helper $*; }; f"
+	helper = "!f() { /home/esp/.vscode-server/bin/e170252f762678dec6ca2cc69aba1570769a5d39/node /tmp/vscode-remote-containers-76806e79-71c5-40fe-9d89-3b12397be0ab.js git-credential-helper $*; }; f"
+[safe]
+	directory = /home/esp
